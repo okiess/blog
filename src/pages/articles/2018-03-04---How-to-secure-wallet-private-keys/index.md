@@ -34,7 +34,11 @@ I would recommend that use a hardware wallet like [Ledger](https://www.ledgerwal
 
 Before you start archiving wallets create your own process that you follow everytime. Create a document or note what that process contaings. Make sure to follow each step for every wallet/coin that you archive. Every wallet needs to be reproducable even in 5 or 10 years from now. Think longterm!
 
-* Use a unique and generated password for each wallet (encryption passwords). I use [Masterpassword App](http://masterpasswordapp.com/) which doesn't need to be synced. I archive the Masterpassword key I use for the wallet. I don't archive the password itself, just the key to get the password back.
+* Use a unique and generated password for each wallet (encryption passwords). I use [Masterpassword App](http://masterpasswordapp.com/) which doesn't need to be synced and doesn't store any passwords on disk. I archive the Masterpassword key I use for the wallet. I don't archive the password itself, just the key to get the password back.
+
+* Choosing a good master password/passphrase is critical. Never persist your Masterpassword App passphrase anywhere. Every other wallet password is derived from the Masterpassword app. Only persist the Masterpassword App entry key, never the password itself.
+	* For example: The monero wallet password has the Masterpassword App Key _monero-wallet_. When you create your secure note in KeePassXC you only reference the _monero-wallet_ key, not the resulting password itself.
+	* Create a copy of the Masterpassword app on the USB stick too
 
 * Buy two or more USB sticks from the same manifacturer that have a high quality (at least 16GB in size)
 	* Create an encrypted filesystem on the USB stick before first use
@@ -46,14 +50,10 @@ Before you start archiving wallets create your own process that you follow every
 
 * Create a secure note for each wallet, private key and/or seed. Store all the information you can find for this coin (public key, private keys, other keys, public addresses, seed, username, wallet software version, link to paperwallet generator, link to blockchain explorer for the public address, screenshots and attachments etc.). It must be possible to fully recover the wallet even in years. Remember that you will own many coins over the years, you will likely not be able to remember everything you ever invested in!
 
-* Exclude your USB stick from TimeMachine backups.
+* Exclude your USB stick volume from TimeMachine backups. You can set this in the TimeMachine settings.
 
 * Be careful with backups in general. Backups can contain sensitive information. Make sure to back check old backups as well. If in doubt, delete old backups!
   * Make sure your external TimeMachine backup drive is encrypted as well. If not, start fresh! Don't make compromises.
-
-* Gutes Master Password
-	* Masterpassword App benutzen, um ein simples in ein starkes Masterpasswort zu verwandeln
-		* Masterpassword App persistiert nichts
 
 * Delete temporary data like screenshots with `rm -P`
 
@@ -61,23 +61,20 @@ Before you start archiving wallets create your own process that you follow every
   * Keep your GnuPG secret key externally on a Yubikey
 
 
-#### KeePass XC auf USB Stick installieren
+#### Install KeePass XC on your external USB stick
 
-* Download KeePass XC:
+* Download KeePass XC for your OS
 
-TODO
+* It's free and opensource and available for all major platforms. Don't use mobile or cloud sync. _Everything_ needs to be stored on the flash drive itself. 
 
-Kostenlos & Open Source für alle Plattformen (Mobile/Cloud Sync sollte man sowieso vermeiden)
-	* Open Source wichtig, Code Audit, vertrauenswürdig
-
-KeePass XC Einstellungen (nichts merken, speichern beim Beenden)
+* Edit the KeePass XC settings to _don't remember anything_ and safe on exit
 
 Bank eSafe? Kein digitalen Safe, über den man nicht volle Kontrolle hat
 
-* USB Stick Backup
-	* optimalerweise an einem anderen Ort ablegen
+* Create one or more backups of the flash drive and store in a safe or a different location.
 
-* Backup Stick regelmässig nachziehen
+* Update your flash drive backups on a regular basis and make routine checks every once in a while.
+
 
 ### My process in short (Paper Wallet)
 
