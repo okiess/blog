@@ -106,4 +106,4 @@ Bank eSafe? Kein digitalen Safe, über den man nicht volle Kontrolle hat
 
 * keinen der Schritte überspringen, sich die Zeit dazu nehmen
 
-Disclaimer: TODO
+Disclaimer: This information is provided _as is_ without any warranty of any kind, express or implied. In no event shall the author be liable for any claim, damages or other liability. Use at your own risk.
