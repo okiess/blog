@@ -15,8 +15,12 @@ module.exports = {
         path: '/about/'
       },
       {
-        label: 'Impressum',
+        label: 'Site notice / Impressum',
         path: '/impressum/'
+      },
+      {
+        label: 'Privacy policy / Datenschutzerklärung',
+        path: '/privacy/'
       }
     ],
     author: {
